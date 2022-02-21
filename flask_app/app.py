@@ -10,14 +10,14 @@ df = pd.DataFrame(df)
 #Home Page
 @app.route('/', methods=['POST', 'GET'])
 def home():
-    return render_template('home.html')
+    return render_template('test.html')
 
 #Result Page
 @app.route('/result', methods=['POST', 'GET'])
 def result():
     #if request.method == 'POST':
     #return df.to_html(header="true", table_id="table")
-    return render_template('result.html',  tables=[df.to_html(classes='data', header="true")])
+    return render_template('test2.html',  tables=[df.to_html(classes='data', header="true")])
 
 
 if __name__ == '__main__':
