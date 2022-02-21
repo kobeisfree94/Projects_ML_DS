@@ -1,10 +1,12 @@
 from flask import Flask, request, render_template
 import pickle
 import pandas as pd
+import os
 
 app = Flask(__name__)
 
-df = pd.read_pickle('result.pkl')
+result_pkl= os.path.join(os.path.dirname(__file__), 'result.pkl')
+df = pd.read_pickle(result_pkl)
 df = pd.DataFrame(df)
 
 #Home Page
