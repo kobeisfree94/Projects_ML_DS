@@ -1,1 +1,1 @@
-web: gunicorn --workers=2 'app.py:app'
+web: gunicorn --workers=2 app:app
