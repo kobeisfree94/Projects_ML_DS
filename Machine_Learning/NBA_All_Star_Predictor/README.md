@@ -1,4 +1,5 @@
-***NBA All-Star Predictor***
+****NBA All-Star Predictor****
+___
 
 **Background:**
 
@@ -9,13 +10,15 @@ NBA에서 All-Star가 됬다는것은 선수 개인에게 가장 큰 영광 중 
 NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA에 홍보와 선수들의 커리어에 큰 비중을 차지하는 이벤트이다. 
 
 그런 측면에서 MVP나 All-Star를 예측하는것은 팬들에게 큰 흥미를 가져다 줄 수 있을 뿐더러 스포츠 베팅 업체들이나 Fantasy Sports시장이 크게 관심을 가질만한 아이템이라고 생각한다. 
-
+___
 
 **1. Project Objective**
 - To predict the NBA All-Star Roster of 24 players for the 2021-2022 season using player statistics from 1996-2021.
+___
 
 **2. Project Process**
 - Data --> Data Preprocessing --> Random Forest Classifier --> Prediction/Evaluation
+___
 
 **3. Data & EDA**
 - Database of player stats from 1996- 2021 constructed using SQLite (source: Basketball-Reference.com)
@@ -24,6 +27,7 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 - Concatenated additional information (ex. all_star_2020 list)
 - Feature Engineering
   - True Shooting Percengatge (TS%) = (Points/ (2*(Field Goals Attempted+0.44*Free Throws Attempted)))
+___
 
 **4. Model**
 - Train = 1996-2020
@@ -33,16 +37,19 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 - Model = Random Forest Classifier
 - Train Accuracy = 1.0
 - Val Accuracy = 95.7
+___
 
 **5. Conclusions**
 - 머신러닝 모델을 활용하여 25명의 2021-2022 NBA All-Star 로스터를 예측
 - ![Screen Shot 2022-08-01 at 18 36 32](https://user-images.githubusercontent.com/60637777/182119827-e838be88-1ffa-4214-9fd5-7e68f0080900.png)
 - 예측한 결과를 Pickle하여 Flask와 Heroku를 활용하여 API 애플리케이션으로 배포. 
+___
 
 *Update* 
 - 위 프로젝트를 진행했을때 당시에는 NBA All-Star전이 진행되기 이전이 었기에 실제 리스트와 비교분석을 진행하지 못했었지만 2022년 2월 21일 진행했던 실제 게임 로스터와 위 예측 모델의 성과를 비교했을때 
 ![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
 - 예측 로스터와 실제 로스터의 일치도 = 74.07% 
+___
 
 **6. Reflections**
 - 분석을 진행하면서 몇 가지 변수들을 겪었다.
