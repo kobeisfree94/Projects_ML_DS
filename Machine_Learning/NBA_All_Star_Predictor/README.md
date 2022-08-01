@@ -1,6 +1,6 @@
-**NBA All-Star Predictor
+***NBA All-Star Predictor***
 
-**Background:
+**Background:**
 
 미국에서 Fantasy Sport 시장은 2025년 까지 대략 $6.1 billion 더 성장 할 것 이라고 예측하고 있다. 예전에도 인기가 있었지만 비대면시대에 더 각광을 받는 시장이다. 
 Fantasy Sport에 주요 메커니즘은 통계에 기반한 미래 예측이다. 선수들을 고르고 그 선수들의 실제 퍼포먼스에 따라 점수를 얻고 같은 리그에 있는 경쟁자들 보다 더 높은 랭킹을 얻는것이 목표이다. 
@@ -11,13 +11,13 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 그런 측면에서 MVP나 All-Star를 예측하는것은 팬들에게 큰 흥미를 가져다 줄 수 있을 뿐더러 스포츠 베팅 업체들이나 Fantasy Sports시장이 크게 관심을 가질만한 아이템이라고 생각한다. 
 
 
-**1. Project Objective
+**1. Project Objective**
 - To predict the NBA All-Star Roster of 24 players for the 2021-2022 season using player statistics from 1996-2021.
 
-**2. Project Process
+**2. Project Process**
 - Data --> Data Preprocessing --> Random Forest Classifier --> Prediction/Evaluation
 
-**3. Data & EDA
+**3. Data & EDA**
 - Database of player stats from 1996- 2021 constructed using SQLite (source: Basketball-Reference.com)
 - Filled in Missing Values with 0
 - Converted to appropriate data types for convenience
@@ -25,7 +25,7 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 - Feature Engineering
   - True Shooting Percengatge (TS%) = (Points/ (2*(Field Goals Attempted+0.44*Free Throws Attempted)))
 
-**4. Model
+**4. Model**
 - Train = 1996-2020
 - Test = 2021
 - Features: ['PTS', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'TS%', '3PM']
@@ -34,7 +34,7 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 - Train Accuracy = 1.0
 - Val Accuracy = 95.7
 
-**5. Conclusions
+**5. Conclusions**
 - 머신러닝 모델을 활용하여 25명의 2021-2022 NBA All-Star 로스터를 예측
 - ![Screen Shot 2022-08-01 at 18 36 32](https://user-images.githubusercontent.com/60637777/182119827-e838be88-1ffa-4214-9fd5-7e68f0080900.png)
 - 예측한 결과를 Pickle하여 Flask와 Heroku를 활용하여 API 애플리케이션으로 배포. 
@@ -44,7 +44,7 @@ NBA All-Star Roster를 예측하는 패널과 쇼도 따로 있을 정도로 NBA
 ![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
 - 예측 로스터와 실제 로스터의 일치도 = 74.07% 
 
-**6. Reflections
+**6. Reflections**
 - 분석을 진행하면서 몇 가지 변수들을 겪었다.
 
 1. 팬투표/인기
