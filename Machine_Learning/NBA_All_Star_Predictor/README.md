@@ -1,4 +1,4 @@
-****NBA All-Star Predictor****
+# NBA All-Star Predictor
 ___
 
 **Background:**
@@ -46,8 +46,8 @@ ___
 ___
 
 *Update* 
-- 위 프로젝트를 진행했을때 당시에는 NBA All-Star전이 진행되기 이전이 었기에 실제 리스트와 비교분석을 진행하지 못했었지만 2022년 2월 21일 진행했던 실제 게임 로스터와 위 예측 모델의 성과를 비교했을때 
-![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
+- 위 프로젝트를 진행했을때 당시에는 NBA All-Star전이 진행되기 이전이 었기에 실제 리스트와 비교분석을 진행하지 못 했었지만 2022년 2월 21일 진행했던 실제 게임 로스터와 위 예측 모델의 성과를 비교했을때 결과는 아래와 같다. 
+- ![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
 - 예측 로스터와 실제 로스터의 일치도 = 74.07% 
 ___
 
