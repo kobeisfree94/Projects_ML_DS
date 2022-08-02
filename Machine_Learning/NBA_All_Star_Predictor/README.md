@@ -32,8 +32,8 @@ ___
 **4. Model**
 - Train = 1996-2020
 - Test = 2021
-- Features: ['PTS', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'TS%', '3PM']
-- Target: ["Selected?"]
+- Features = ['PTS', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'TS%', '3PM']
+- Target = ["Selected?"]
 - Model = Random Forest Classifier
 - Train Accuracy = 1.0
 - Val Accuracy = 95.7
@@ -41,18 +41,18 @@ ___
 
 **5. Conclusions**
 - 머신러닝 모델을 활용하여 25명의 2021-2022 NBA All-Star 로스터를 예측
-- ![Screen Shot 2022-08-01 at 18 36 32](https://user-images.githubusercontent.com/60637777/182119827-e838be88-1ffa-4214-9fd5-7e68f0080900.png)
+![Screen Shot 2022-08-01 at 18 36 32](https://user-images.githubusercontent.com/60637777/182119827-e838be88-1ffa-4214-9fd5-7e68f0080900.png)
 - 예측한 결과를 Pickle하여 Flask와 Heroku를 활용하여 API 애플리케이션으로 배포. 
 ___
 
 *Update* 
 - 위 프로젝트를 진행했을때 당시에는 NBA All-Star전이 진행되기 이전이 었기에 실제 리스트와 비교분석을 진행하지 못 했었지만 2022년 2월 21일 진행했던 실제 게임 로스터와 위 예측 모델의 성과를 비교했을때 결과는 아래와 같다. 
-- ![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
+![Screen Shot 2022-08-01 at 19 15 48](https://user-images.githubusercontent.com/60637777/182127111-60cfcd1d-4a73-49ae-adb3-5437c48517c0.png)
 - 예측 로스터와 실제 로스터의 일치도 = 74.07% 
 ___
 
 **6. Reflections**
-- 분석을 진행하면서 몇 가지 변수들을 겪었다.
+- 아래는 분석을 하면서 겪었던 변수들, 그리고 추후에 발전 할 수 있는 부분들을 정리했습니다. 
 
 1. 팬투표/인기
 - 실제 NBA All-Star 로스터는 전문가 50%, 팬 투표 50%를 기반으로 로스터가 결정 되기 때문에 통계를 기반한 quantitative 분석으로 만은 부족한 일치성을 보인다.
