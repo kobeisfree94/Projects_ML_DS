@@ -1,23 +1,4 @@
 # Projects Summary
-
-## **[Deep Learning](https://github.com/kobeisfree94/Projects/tree/master/Deep_Learning)** 🧠
-
-#### **[Computer Vision]**
-  - [COVID19 CT Image Classification] 
-    -  Classified app. 1400 chest CT images using various ResNet models to determing COVID19 positivity
-  
-#### **[Natural Language Processing]**
-  - [Machine Translation]
-    - Engligh-to-Korean Machine Translator using LSTM
-  - [Fake_News_Detector]
-    - Fake News Detector using TF-IDF, Porter Stemmer, and LSTM  
-  - [Speech To Text]
-    - STT project for WhoCaresKorea's senior dating app launch
-    - Integrated NAVER Clova Speech Recognition API
-
-#### **[Recommendation]**
-  - [Movie_Recommendation]
-    - Movie Recommendation using Cosine Similarity and TF-IDF  
  
 ## **[Machine Learning](https://github.com/kobeisfree94/Projects/tree/master/Machine_Learning)** 🤖
   - [NBA All-Star Predictor]
